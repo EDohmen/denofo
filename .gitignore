@@ -12,3 +12,6 @@ wheels/
 
 # ete3 ncbi taxonomy database
 taxdump.tar.gz
+
+# Sphinx documentation
+docs/_build/

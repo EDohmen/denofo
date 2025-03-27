@@ -34,8 +34,7 @@ def get_model_from_qstack_dict(
     Get a BaseModel object from a qstack dictionary (which can contain field
     names and values from other models as well).
 
-    :param qstack_dict: The qstack dictionary. keys = model field names,
-    values = model field values.
+    :param qstack_dict: The qstack dictionary. keys = model field names, values = model field values.
     :type qstack_dict: dict
     :param model: The BaseModel object.
     :type model: BaseModel

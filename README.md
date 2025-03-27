@@ -4,6 +4,19 @@
 
 Denofo is a toolkit developed for the de novo gene research community. It provides tools for working with a standardized de novo gene annotation format, facilitating the annotation, conversion, and comparison of de novo gene annotations.
 
+## Table of Contents
+
+- [De Novo Gene Annotation Format (DNGF)](#de-novo-gene-annotation-format-dngf)
+- [Tools](#tools)
+- [Installation](#installation)
+  - [Installation with pip](#installation-with-pip)
+  - [Installation with uv](#installation-with-uv)
+- [Usage](#usage)
+- [The NCBI Taxonomy Database](#the-ncbi-taxonomy-database)
+- [Contributing, feature requests and bug reports](#contributing-feature-requests-and-bug-reports)
+- [Publications and Citation](#publications-and-citation)
+- [License](#license)
+
 ## De Novo Gene Annotation Format (DNGF)
 
 The Denofo toolkit introduces a standardized annotation format for de novo genes. This format aims to streamline the annotation process and ensure consistency across different studies and methodologies used to detect de novo genes. The *.dngf file extension is used for these annotation files.
@@ -20,9 +33,8 @@ Both CLI and GUI versions are provided to cater to different user needs and envi
 
 ## Installation
 
-<div style="color:red; border:1px solid red; padding:10px;">
-<strong>Warning:</strong> This tool is not yet published on PyPI, but it will be available soon. In the meantime, please use the installation from the local Git repository.
-</div>
+> [!CAUTION]
+This tool is not yet published on PyPI, but it will be available soon. In the meantime, please use the installation from the local Git repository.
 
 ### Prerequisites
 

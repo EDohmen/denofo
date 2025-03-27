@@ -114,7 +114,7 @@ def enum_choice_selection(
     :param prev_answer: The previous answer.
     :type prev_answer: Any
     :return: The selected item/items.
-    :rtype GoQBack | list[str]
+    :rtype: GoQBack | list[str]
     """
     current_index = 0
     if prev_answer:
@@ -218,7 +218,7 @@ def get_enum_choice_conversion(
     :param prev_answer: The previous answer.
     :type prev_answer: Any
     :return: The selected item/items.
-    :rtype GoQBack | str | list[str]
+    :rtype: GoQBack | str | list[str]
     """
     selected = []
     items = list(my_enum)
@@ -259,7 +259,7 @@ def custom_entry_insertion(
     :param prev_answer: The previous answer.
     :type prev_answer: Any
     :return: The custom entry/ies.
-    :rtype str | list[str] | GoQBack
+    :rtype: str | list[str] | GoQBack
     """
     previous_entry = False
 
@@ -432,7 +432,7 @@ def get_custom_entry(
     :param prev_answer: The previous answer.
     :type prev_answer: Any
     :return: The custom entry/ies.
-    :rtype str | list[str] | GoQBack
+    :rtype: str | list[str] | GoQBack
     """
 
     multi_entries_lst = []
@@ -475,7 +475,7 @@ def yes_or_no(
     :param prev_answer: The previous answer.
     :type prev_answer: Any
     :return: The binary answer.
-    :rtype bool | GoQBack
+    :rtype: bool | GoQBack
     """
 
     while True:

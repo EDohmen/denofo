@@ -7,6 +7,7 @@ Denofo is a toolkit developed for the de novo gene research community. It provid
 ## Table of Contents
 
 - [De Novo Gene Annotation Format (DNGF)](#de-novo-gene-annotation-format-dngf)
+- [Documentation and User Manual](#documentation)
 - [Tools](#tools)
 - [Installation](#installation)
   - [Installation with pip](#installation-with-pip)
@@ -20,6 +21,9 @@ Denofo is a toolkit developed for the de novo gene research community. It provid
 ## De Novo Gene Annotation Format (DNGF)
 
 The Denofo toolkit introduces a standardized annotation format for de novo genes. This format aims to streamline the annotation process and ensure consistency across different studies and methodologies used to detect de novo genes. The *.dngf file extension is used for these annotation files.
+
+## Documentation
+For Documentation and Manuals, please visit [https://denofo.readthedocs.io/en/latest/](https://denofo.readthedocs.io/en/latest/).
 
 ## Tools
 

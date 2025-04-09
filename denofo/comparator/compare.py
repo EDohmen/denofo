@@ -13,6 +13,10 @@ def _turn_value_to_string(val: Any, model_name: str, field_name: str) -> str:
 
     :param val: The element to turn into a string.
     :type val: Any
+    :param model_name: The name of the model (necessary for correct indentation level).
+    :type model_name: str
+    :param field_name: The name of the field (necessary for correct indentation level).
+    :type field_name: str
     :return: The element as a string.
     :rtype: str
     """
@@ -52,9 +56,15 @@ def _get_output_string(
     """
     Get the comparison result as a string.
 
-    :param comparison: The comparison result.
+    :param comparison: The comparison input as preprocessed by :func:`denofo.utils.helpers.compare_two_models` .
     :type comparison: list[tuple]
-    :return: The comparison result as a string.
+    :param mode: The mode of comparison, either "similarities" or "differences".
+    :type mode: str
+    :param name1: The display name of the first comparison element.
+    :type name1: str
+    :param name2: The display name of the second comparison element.
+    :type name2: str
+    :return: The comparison result as a formatted string.
     :rtype: str
     """
     last_model = ""
@@ -138,10 +148,16 @@ def write_comparison(
     """
     Write the comparison result to the output file.
 
-    :param comparison: The comparison result.
+    :param comparison: The comparison input as preprocessed by :func:`denofo.utils.helpers.compare_two_models` .
     :type comparison: list[tuple]
+    :param mode: The mode of comparison, either "similarities" or "differences". Defaults to "differences".
+    :type mode: str
     :param output_path: The path to the output file. If None, the result is returned as a string.
     :type output_path: Path | None
+    :param name1: The display name of the first comparison element. Defaults to "dngf_1".
+    :type name1: str
+    :param name2: The display name of the second comparison element. Defaults to "dngf_2".
+    :type name2: str
     :return: The comparison result as a string if output_path is None, otherwise None.
     :rtype: str | None
     """

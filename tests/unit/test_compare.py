@@ -3,16 +3,20 @@ from denofo.comparator.compare import write_comparison
 from enum import Enum
 from denofo.comparator.compare import _turn_value_to_string
 
-
-# Import the functions to test
-
-# Monkey-patch the constants to avoid submodel complications in tests.
+# patch the constants to avoid submodel complications in tests.
 # These constants are otherwise imported from denofo.utils.constants.
 import denofo.comparator.compare as cmp_mod
 
-cmp_mod.SUBMODELS = []
-cmp_mod.SUBMODEL_FIELDS = {}
-cmp_mod.FIELDS_OF_LVL1_SUBMODELS = []
+cmp_mod.SUBMODELS = {"ModelA", "ModelB", "ModelC", "ModelX"}
+cmp_mod.INDENT_LVL_DICT = {
+    "ModelA": 1,
+    "ModelB": 1,
+    "ModelC": 1,
+    "ModelX": 1,
+    "fieldX": 2,
+    "fieldY": 2,
+    "fieldZ": 2,
+}
 
 
 def test_write_comparison_similarities():
@@ -30,8 +34,10 @@ def test_write_comparison_similarities():
     assert "fieldX:" in output
     assert "identical value" in output
     # Check that complex value is represented as string
-    assert "a: " in output
-    assert "b: " in output
+    assert "a:" in output
+    assert "1" in output
+    assert "b:" in output
+    assert "2" in output
 
 
 def test_write_comparison_differences():
@@ -85,5 +91,5 @@ def test_turn_value_to_string_enum_instance():
     class DummyEnum(Enum):
         VALUE = "dummy_value"
 
-    result = _turn_value_to_string(DummyEnum.VALUE)
-    assert result == "dummy_value"
+    result = _turn_value_to_string(DummyEnum.VALUE, "modelA", "fieldX")
+    assert result.strip() == "dummy_value"

@@ -107,9 +107,9 @@ FUNCS_TO_MODELS_DICT = {
 }
 
 SUBMODELS = {
+    "DeNovoGeneAnnotation",
     "AnnotGenome",
     "Transcriptome",
-    "TaxonID",
     "PhylogeneticTaxa",
     "HomologyFilter",
     "SyntenySearch",
@@ -118,30 +118,57 @@ SUBMODELS = {
     "TranslationalEvidence",
 }
 
-SUBMODEL_FIELDS = {
-    "AnnotGenome": "inputAnnotGenome",
-    "Transcriptome": "inputTranscriptome",
-    "TaxonID": "taxonID",
-    "PhylogeneticTaxa": "phylogeneticTaxa",
-    "HomologyFilter": "homologyFilter",
-    "SyntenySearch": "synteny",
-    "NonCodingHomologs": "nonCodingHomologs",
-    "EvolutionaryInformation": "evolutionaryInformation",
-    "TranslationalEvidence": "translationalEvidence",
-}
-
-FIELDS_OF_LVL1_SUBMODELS = {
-    "inputAnnotGenome",
-    "inputTranscriptome",
-    "phylogeneticTaxa",
-    "homologyFilter",
-    "nonCodingHomologs",
-    "evolutionaryInformation",
-    "translationalEvidence",
-}  # without taxonID and synteny, because these are second level submodels
-
 REPLACEMENTS = {
     "[": '["',
     "]": '"]',
     ",": '","',
+}
+
+INDENT_LVL_DICT = {
+    "DeNovoGeneAnnotation": 0,
+    "inputData": 1,
+    "inputAnnotGenome": 2,
+    "AnnotGenome": 3,
+    "annotGenomeChoice": 3,
+    "inputTranscriptome": 2,
+    "Transcriptome": 2,
+    "expressionLevel": 3,
+    "transContextChoice": 3,
+    "customGeneticContext": 3,
+    "transORFChoice": 3,
+    "customORF": 3,
+    "transcriptomeInfo": 3,
+    "customInputData": 2,
+    "nonCodingHomologs": 1,
+    "translationalEvidence": 1,
+    "taxonID": 2,
+    "TaxonID": 2,
+    "HomologyFilter": 1,
+    "homologyFilter": 1,
+    "PhylogeneticTaxa": 2,
+    "phylogeneticTaxa": 2,
+    "taxSpecificity": 3,
+    "taxID": 3,
+    "seqType": 2,
+    "customSeqType": 2,
+    "structuralSimilarity": 2,
+    "threshold": 2,
+    "customThreshold": 2,
+    "thresholdValue": 2,
+    "dataBase": 2,
+    "customDB": 2,
+    "NonCodingHomologs": 1,
+    "enablingMutations": 2,
+    "synteny": 2,
+    "SyntenySearch": 2,
+    "anchors": 3,
+    "customAnchor": 3,
+    "softwareSyntenySearch": 3,
+    "EvolutionaryInformation": 1,
+    "evolutionaryInformation": 1,
+    "selection": 2,
+    "TranslationalEvidence": 1,
+    "translationEvidence": 2,
+    "customTranslationEvidence": 2,
+    "studyURL": 1,
 }

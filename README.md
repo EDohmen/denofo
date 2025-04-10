@@ -37,9 +37,6 @@ Both CLI and GUI versions are provided to cater to different user needs and envi
 
 ## Installation
 
-> [!CAUTION]
-This tool is not yet published on PyPI, but it will be available soon. In the meantime, please use the installation from the local Git repository.
-
 ### Prerequisites
 
 *   pip or uv

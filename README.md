@@ -1,6 +1,6 @@
 # DENOFO Toolkit
 
-[![Denofo Logo](denofo/static/denofo-logo.jpg)](https://github.com/EDohmen/denofo)
+[![Denofo Logo](https://raw.githubusercontent.com/EDohmen/denofo/main/denofo/static/denofo-logo.jpg)](https://github.com/EDohmen/denofo)
 
 Denofo is a toolkit developed for the de novo gene research community. It provides tools for working with a standardized de novo gene annotation format, facilitating the annotation, conversion, and comparison of de novo gene annotations.
 

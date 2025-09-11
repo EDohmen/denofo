@@ -8,6 +8,9 @@ is captured and that the annotation is consistent across different studies.
 There are two interfaces for the questionnaire: a command-line interface (CLI) 
 and a graphical user interface (GUI).
 
+For a complete overview of all questions and their data model mapping, see the 
+:doc:`questionnaire_overview` page.
+
 
 Command-line interface (CLI)
 ----------------------------

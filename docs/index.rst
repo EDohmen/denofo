@@ -36,6 +36,7 @@ The ``*.dngf`` file extension is used for these annotation files.
    tools
    installation
    usage
+   questionnaire_overview
    technical_documentation
    ncbi_tax_db
    contributing

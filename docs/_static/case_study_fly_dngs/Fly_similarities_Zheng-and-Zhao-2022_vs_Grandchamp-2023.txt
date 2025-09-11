@@ -1,0 +1,22 @@
+Identical values between Zheng and Zhao (2022) and Grandchamp et al. (2023):
+
+DeNovoGeneAnnotation:
+
+	inputData:
+		transcriptome
+
+	inputTranscriptome:
+
+		transContextChoice:
+			intergenic
+			antisense
+			intronic
+			overlap gene
+
+	homologyFilter:
+
+		seqType:
+			protein sequences
+
+		dataBase:
+			custom choice

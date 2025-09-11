@@ -1,0 +1,17 @@
+Identical values between Vakirlis et al. (2022) and Dowling et al. (2020):
+
+DeNovoGeneAnnotation:
+
+	inputData:
+		transcriptome
+
+	homologyFilter:
+
+		seqType:
+			protein sequences
+
+	translationalEvidence:
+
+		translationEvidence:
+			ribosome profiling
+			custom choice

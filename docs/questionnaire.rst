@@ -1,4 +1,4 @@
-DENOFO questionnaire
+DENOFO Questionnaire
 ====================
 
 The DENOFO questionnaire is a set of questions that guide the annotation process 

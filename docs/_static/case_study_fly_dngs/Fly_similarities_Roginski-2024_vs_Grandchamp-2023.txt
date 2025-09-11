@@ -1,0 +1,11 @@
+Identical values between Roginski et al. (2024) and Grandchamp et al. (2023):
+
+	homologyFilter:
+
+		seqType:
+			protein sequences
+
+		synteny:
+
+			anchors:
+				gene anchors

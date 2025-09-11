@@ -1,0 +1,6 @@
+Identical values between Dowling et al. (2020) and Roginski et al. (2024):
+
+	homologyFilter:
+
+		seqType:
+			protein sequences

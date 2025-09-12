@@ -39,10 +39,10 @@ The ``*.dngf`` file extension is used for these annotation files.
    questionnaire_overview
    technical_documentation
    case_studies
+   example_files
    ncbi_tax_db
    contributing
    citation
-
 
 
 .. Indices and tables

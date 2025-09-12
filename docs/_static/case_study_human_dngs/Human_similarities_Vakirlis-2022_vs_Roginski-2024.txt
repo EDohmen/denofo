@@ -1,0 +1,11 @@
+Identical values between Vakirlis et al. (2022) and Roginski et al. (2024):
+
+	phylogeneticTaxa:
+
+		taxSpecificity:
+			lineage-specific
+
+	homologyFilter:
+
+		seqType:
+			protein sequences

@@ -1,0 +1,21 @@
+Identical values between Zheng and Zhao (2022) and Roginski et al. (2024):
+
+DeNovoGeneAnnotation:
+
+	inputData:
+		annotated genome
+
+	inputAnnotGenome:
+
+		annotGenomeChoice:
+			homology-based approach
+
+	phylogeneticTaxa:
+
+		taxSpecificity:
+			lineage-specific
+
+	homologyFilter:
+
+		seqType:
+			protein sequences

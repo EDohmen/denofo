@@ -30,17 +30,19 @@ across different studies and methodologies used to detect de novo genes.
 The ``*.dngf`` file extension is used for these annotation files.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
    tools
    installation
    usage
+   questionnaire_overview
    technical_documentation
+   case_studies
+   example_files
    ncbi_tax_db
    contributing
    citation
-
 
 
 .. Indices and tables

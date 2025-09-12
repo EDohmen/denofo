@@ -1,0 +1,95 @@
+Differences between Roginski et al. (2024) and Grandchamp et al. (2023):
+
+DeNovoGeneAnnotation:
+
+	inputData:
+
+		values in Roginski et al. (2024) but not in Grandchamp et al. (2023):
+		annotated genome
+
+		values in Grandchamp et al. (2023) but not in Roginski et al. (2024):
+		transcriptome
+
+	inputAnnotGenome:
+
+		values in Roginski et al. (2024) but not in Grandchamp et al. (2023):
+		annotGenomeChoice: homology-based approach
+
+	inputTranscriptome:
+
+		values in Grandchamp et al. (2023) but not in Roginski et al. (2024):
+		expressionLevel: 0.5
+		transContextChoice: 
+			intergenic
+			antisense
+			intronic
+			overlap gene
+		transORFChoice: longest ORF
+
+	evolutionaryInformation:
+
+		selection:
+
+			differing values in Roginski et al. (2024) and Grandchamp et al. (2023):
+			codeml
+			dN/dS
+
+	phylogeneticTaxa:
+
+		taxSpecificity:
+
+			differing values in Roginski et al. (2024) and Grandchamp et al. (2023):
+			lineage-specific
+			species-specific
+
+		taxonID:
+
+			taxID:
+
+				differing values in Roginski et al. (2024) and Grandchamp et al. (2023):
+				Drosophila melanogaster-drosophila
+				7227
+
+	homologyFilter:
+
+		threshold:
+
+			differing values in Roginski et al. (2024) and Grandchamp et al. (2023):
+			e-value
+			0.0001, 0.1
+
+		dataBase:
+
+			values in Roginski et al. (2024) but not in Grandchamp et al. (2023):
+			NCBI NR
+
+			values in Grandchamp et al. (2023) but not in Roginski et al. (2024):
+			custom choice
+
+		customDB:
+
+			values in Grandchamp et al. (2023) but not in Roginski et al. (2024):
+			Drosophila proteomes
+			Dipteran proteomes
+
+	nonCodingHomologs:
+
+		enablingMutations:
+
+			values in Grandchamp et al. (2023) but not in Roginski et al. (2024):
+			True
+
+		synteny:
+
+			softwareSyntenySearch:
+
+				values in Roginski et al. (2024) but not in Grandchamp et al. (2023):
+				DENSE
+
+			studyURL:
+
+				values in Roginski et al. (2024) but not in Grandchamp et al. (2023):
+				https://doi.org/10.1093/gbe/evae159
+
+				values in Grandchamp et al. (2023) but not in Roginski et al. (2024):
+				https://doi.org/10.1101/gr.277482.122
